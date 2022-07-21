@@ -1,9 +1,6 @@
 package com.myjava.service_video.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 
 import java.time.LocalDateTime;
 
@@ -56,6 +53,7 @@ public class Author {
 
     @ApiModelProperty("逻辑删除 1 : 已删除 0: 未删除")
     @TableField("is_deleted")
+    @TableLogic
     private Integer isDeleted;
 
     @ApiModelProperty("创建时间")

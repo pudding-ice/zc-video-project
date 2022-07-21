@@ -13,6 +13,7 @@
     </parent>
     <modules>
         <module>service</module>
+        <module>common</module>
     </modules>
     <name>video_parent</name>
     <description>video_parent</description>
