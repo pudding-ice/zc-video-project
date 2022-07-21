@@ -54,9 +54,11 @@
                     <include>**/*.yml</include>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
+                    <include>**/swagger-ui.html</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>
+
         </resources>
         <finalName>/dist/${artifactId}</finalName>
         <plugins>
