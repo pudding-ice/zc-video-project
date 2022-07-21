@@ -1,7 +1,8 @@
 package com.myjava.service_video.controller;
 
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.myjava.ResponseResult;
 import com.myjava.service_video.entity.Author;
 import com.myjava.service_video.service.AuthorService;
 import io.swagger.annotations.Api;
@@ -13,8 +14,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * <p>
@@ -39,5 +38,23 @@ public class AuthorController {
             String id) {
         return service.getById(id);
     }
+
+    @ApiOperation(value = "根据页码和页数获取作者分页数据")
+    @GetMapping("/pageList/{current}/{size}")
+    public ResponseResult pageList(
+            @ApiParam(name = "current", value = "页码", required = true)
+            @PathVariable
+            Long current,
+            @ApiParam(name = "size", value = "页码大小", required = true)
+            @PathVariable Long size) {
+        Page<Author> pageInfo = new Page<>(current, size);
+        service.page(pageInfo, null);
+        return ResponseResult.ok()
+                .message("成功获取作者列表")
+                .data("list", pageInfo.getRecords())
+                .data("total", pageInfo.getTotal())
+                .data("pages", pageInfo.getPages());
+    }
+
 }
 
