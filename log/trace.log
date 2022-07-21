@@ -1,0 +1,39 @@
+2022-07-21 16:31:07.849 INFO  com.myjava.service_video.VideoApplication         :55   [32m                  [0;39m Starting VideoApplication using Java 1.8.0_261 on LAPTOP-KF5OPU7V with PID 22112 (D:\myProject\video_parent\service\service_video\target\classes started by Pudding in D:\myProject\video_parent)
+2022-07-21 16:31:07.851 INFO  com.myjava.service_video.VideoApplication         :664  [32m                  [0;39m The following profiles are active: dev
+2022-07-21 16:31:07.888 WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder  :127  [32m                  [0;39m For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-21 16:31:08.449 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2022-07-21 16:31:08.455 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2022-07-21 16:31:08.455 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-21 16:31:08.455 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-07-21 16:31:08.526 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-21 16:31:08.526 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 645 ms
+2022-07-21 16:31:10.027 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-21 16:31:10.183 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2022-07-21 16:31:10.195 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path ''
+2022-07-21 16:31:10.202 INFO  com.myjava.service_video.VideoApplication         :61   [32m                  [0;39m Started VideoApplication in 2.648 seconds (JVM running for 3.63)
+2022-07-21 16:31:10.204 INFO  com.myjava.service_video.VideoApplication         :17   [32m                  [0;39m 启动成功！！
+2022-07-21 16:31:10.205 INFO  com.myjava.service_video.VideoApplication         :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8001
+2022-07-21 16:31:12.135 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 16:31:12.136 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-21 16:31:12.137 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-07-21 16:35:16.968 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-21 16:35:23.066 INFO  com.myjava.service_video.VideoApplication         :55   [32m                  [0;39m Starting VideoApplication using Java 1.8.0_261 on LAPTOP-KF5OPU7V with PID 12620 (D:\myProject\video_parent\service\service_video\target\classes started by Pudding in D:\myProject\video_parent)
+2022-07-21 16:35:23.067 INFO  com.myjava.service_video.VideoApplication         :664  [32m                  [0;39m The following profiles are active: dev
+2022-07-21 16:35:23.104 WARN  o.s.h.converter.json.Jackson2ObjectMapperBuilder  :127  [32m                  [0;39m For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-07-21 16:35:23.643 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2022-07-21 16:35:23.647 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2022-07-21 16:35:23.647 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-21 16:35:23.648 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-07-21 16:35:23.719 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-21 16:35:23.720 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 625 ms
+2022-07-21 16:35:25.175 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-21 16:35:25.335 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2022-07-21 16:35:25.347 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path ''
+2022-07-21 16:35:25.354 INFO  com.myjava.service_video.VideoApplication         :61   [32m                  [0;39m Started VideoApplication in 2.583 seconds (JVM running for 3.585)
+2022-07-21 16:35:25.356 INFO  com.myjava.service_video.VideoApplication         :17   [32m                  [0;39m 启动成功！！
+2022-07-21 16:35:25.357 INFO  com.myjava.service_video.VideoApplication         :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8001
+2022-07-21 16:35:28.166 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 16:35:28.166 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-21 16:35:28.167 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-07-21 16:35:28.200 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool - Starting...
+2022-07-21 16:35:28.317 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool - Start completed.
