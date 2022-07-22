@@ -1,19 +1,17 @@
 package com.myjava.service_video.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.myjava.ResponseResult;
 import com.myjava.service_video.entity.Author;
+import com.myjava.service_video.entity.vo.AuthorQuery;
 import com.myjava.service_video.service.AuthorService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -46,9 +44,14 @@ public class AuthorController {
             @PathVariable
             Long current,
             @ApiParam(name = "size", value = "页码大小", required = true)
-            @PathVariable Long size) {
+            @PathVariable
+            Long size,
+            @ApiParam(name = "query", value = "作者查询条件", required = false)
+            @RequestBody
+            AuthorQuery query
+    ) {
         Page<Author> pageInfo = new Page<>(current, size);
-        service.page(pageInfo, null);
+        service.pageQuery(pageInfo, query);
         return ResponseResult.ok()
                 .message("成功获取作者列表")
                 .data("list", pageInfo.getRecords())
